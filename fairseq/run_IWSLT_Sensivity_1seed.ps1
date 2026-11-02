@@ -1,0 +1,187 @@
+    fairseq-train data-bin/iwslt14.tokenized.de-en `
+    --arch transformer_iwslt_de_en `
+    --share-decoder-input-output-embed `
+    --optimizer adabelief `
+    --adabelief-betas '(0.9, 0.98)' `
+    --clip-norm 0.0 `
+    --lr 5e-4 `
+    --lr-scheduler inverse_sqrt `
+    --warmup-updates 4000 `
+    --dropout 0.3 `
+    --weight-decay 0.0001 `
+    --criterion label_smoothed_cross_entropy `
+    --label-smoothing 0.1 `
+    --max-tokens 4096 `
+    --eval-bleu `
+    --eval-bleu-args '{\"beam\": 5, \"max_len_a\": 1.2, \"max_len_b\": 10}' `
+    --eval-bleu-detok moses `
+    --eval-bleu-remove-bpe `
+    --eval-bleu-print-samples `
+    --best-checkpoint-metric bleu `
+    --maximize-best-checkpoint-metric `
+    --log-format json `
+    --log-file checkpoints_of_seeds/seed1993/iwslt14_adabelief_24/train.log `
+    --save-dir checkpoints_of_seeds/seed1993/iwslt14_adabelief_24 `
+    --seed 1993 `
+    --fixed-validation-seed 1993 `
+    --max-epoch 50 `
+    --save-interval 1 `
+    --no-epoch-checkpoints `
+    --adabelief-eps 1e-24
+
+    fairseq-train data-bin/iwslt14.tokenized.de-en `
+    --arch transformer_iwslt_de_en `
+    --share-decoder-input-output-embed `
+    --optimizer adabelief `
+    --adabelief-betas '(0.9, 0.98)' `
+    --clip-norm 0.0 `
+    --lr 5e-4 `
+    --lr-scheduler inverse_sqrt `
+    --warmup-updates 4000 `
+    --dropout 0.3 `
+    --weight-decay 0.0001 `
+    --criterion label_smoothed_cross_entropy `
+    --label-smoothing 0.1 `
+    --max-tokens 4096 `
+    --eval-bleu `
+    --eval-bleu-args '{\"beam\": 5, \"max_len_a\": 1.2, \"max_len_b\": 10}' `
+    --eval-bleu-detok moses `
+    --eval-bleu-remove-bpe `
+    --eval-bleu-print-samples `
+    --best-checkpoint-metric bleu `
+    --maximize-best-checkpoint-metric `
+    --log-format json `
+    --log-file checkpoints_of_seeds/seed1993/iwslt14_adabelief_6/train.log `
+    --save-dir checkpoints_of_seeds/seed1993/iwslt14_adabelief_6 `
+    --seed 1993 `
+    --fixed-validation-seed 1993 `
+    --max-epoch 50 `
+    --save-interval 1 `
+    --no-epoch-checkpoints `
+    --adabelief-eps 1e-6
+
+    fairseq-train data-bin/iwslt14.tokenized.de-en `
+    --arch transformer_iwslt_de_en `
+    --share-decoder-input-output-embed `
+    --optimizer adabelief `
+    --adabelief-betas '(0.9, 0.98)' `
+    --clip-norm 0.0 `
+    --lr 5e-4 `
+    --lr-scheduler inverse_sqrt `
+    --warmup-updates 4000 `
+    --dropout 0.3 `
+    --weight-decay 0.0001 `
+    --criterion label_smoothed_cross_entropy `
+    --label-smoothing 0.1 `
+    --max-tokens 4096 `
+    --eval-bleu `
+    --eval-bleu-args '{\"beam\": 5, \"max_len_a\": 1.2, \"max_len_b\": 10}' `
+    --eval-bleu-detok moses `
+    --eval-bleu-remove-bpe `
+    --eval-bleu-print-samples `
+    --best-checkpoint-metric bleu `
+    --maximize-best-checkpoint-metric `
+    --log-format json `
+    --log-file checkpoints_of_seeds/seed1993/iwslt14_adabelief_10/train.log `
+    --save-dir checkpoints_of_seeds/seed1993/iwslt14_adabelief_10 `
+    --seed 1993 `
+    --fixed-validation-seed 1993 `
+    --max-epoch 50 `
+    --save-interval 1 `
+    --no-epoch-checkpoints `
+    --adabelief-eps 1e-10
+
+    ########################
+
+    fairseq-train data-bin/iwslt14.tokenized.de-en `
+    --arch transformer_iwslt_de_en `
+    --share-decoder-input-output-embed `
+    --optimizer emoji `
+    --emoji-betas '(0.9, 0.98)' `
+    --clip-norm 0.0 `
+    --lr 5e-4 `
+    --lr-scheduler inverse_sqrt `
+    --warmup-updates 4000 `
+    --dropout 0.3 `
+    --weight-decay 0.0001 `
+    --criterion label_smoothed_cross_entropy `
+    --label-smoothing 0.1 `
+    --max-tokens 4096 `
+    --eval-bleu `
+    --eval-bleu-args '{\"beam\": 5, \"max_len_a\": 1.2, \"max_len_b\": 10}' `
+    --eval-bleu-detok moses `
+    --eval-bleu-remove-bpe `
+    --eval-bleu-print-samples `
+    --best-checkpoint-metric bleu `
+    --maximize-best-checkpoint-metric `
+    --log-format json `
+    --log-file checkpoints_of_seeds/seed1993/iwslt14_emoji_24/train.log `
+    --save-dir checkpoints_of_seeds/seed1993/iwslt14_emoji_24 `
+    --seed 1993 `
+    --fixed-validation-seed 1993 `
+    --max-epoch 50 `
+    --save-interval 1 `
+    --no-epoch-checkpoints `
+    --emoji-eps 1e-24
+
+    fairseq-train data-bin/iwslt14.tokenized.de-en `
+    --arch transformer_iwslt_de_en `
+    --share-decoder-input-output-embed `
+    --optimizer emoji `
+    --emoji-betas '(0.9, 0.98)' `
+    --clip-norm 0.0 `
+    --lr 5e-4 `
+    --lr-scheduler inverse_sqrt `
+    --warmup-updates 4000 `
+    --dropout 0.3 `
+    --weight-decay 0.0001 `
+    --criterion label_smoothed_cross_entropy `
+    --label-smoothing 0.1 `
+    --max-tokens 4096 `
+    --eval-bleu `
+    --eval-bleu-args '{\"beam\": 5, \"max_len_a\": 1.2, \"max_len_b\": 10}' `
+    --eval-bleu-detok moses `
+    --eval-bleu-remove-bpe `
+    --eval-bleu-print-samples `
+    --best-checkpoint-metric bleu `
+    --maximize-best-checkpoint-metric `
+    --log-format json `
+    --log-file checkpoints_of_seeds/seed1993/iwslt14_emoji_10/train.log `
+    --save-dir checkpoints_of_seeds/seed1993/iwslt14_emoji_10 `
+    --seed 1993 `
+    --fixed-validation-seed 1993 `
+    --max-epoch 50 `
+    --save-interval 1 `
+    --no-epoch-checkpoints `
+    --emoji-eps 1e-10
+
+    fairseq-train data-bin/iwslt14.tokenized.de-en `
+    --arch transformer_iwslt_de_en `
+    --share-decoder-input-output-embed `
+    --optimizer emoji `
+    --emoji-betas '(0.9, 0.98)' `
+    --clip-norm 0.0 `
+    --lr 5e-4 `
+    --lr-scheduler inverse_sqrt `
+    --warmup-updates 4000 `
+    --dropout 0.3 `
+    --weight-decay 0.0001 `
+    --criterion label_smoothed_cross_entropy `
+    --label-smoothing 0.1 `
+    --max-tokens 4096 `
+    --eval-bleu `
+    --eval-bleu-args '{\"beam\": 5, \"max_len_a\": 1.2, \"max_len_b\": 10}' `
+    --eval-bleu-detok moses `
+    --eval-bleu-remove-bpe `
+    --eval-bleu-print-samples `
+    --best-checkpoint-metric bleu `
+    --maximize-best-checkpoint-metric `
+    --log-format json `
+    --log-file checkpoints_of_seeds/seed1993/iwslt14_emoji_6/train.log `
+    --save-dir checkpoints_of_seeds/seed1993/iwslt14_emoji_6 `
+    --seed 1993 `
+    --fixed-validation-seed 1993 `
+    --max-epoch 50 `
+    --save-interval 1 `
+    --no-epoch-checkpoints `
+    --emoji-eps 1e-6

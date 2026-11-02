@@ -1,0 +1,1 @@
+﻿optimizer,metric,seed,number_of_epochs,mean_over_last_epochs,std_over_last_epochs,last_epoch_included,cross_seed_mean_of_seed_means,cross_seed_sample_std_of_seed_means,number_of_seeds

@@ -33,6 +33,9 @@ wheels/
 
 # Checkpoints
 checkpoints
+!/checkpoints/
+/checkpoints/*
+!/checkpoints/*.py
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -139,3 +142,25 @@ wandb/
 nohup.out
 multirun
 outputs
+
+# ============================================================
+# EMOJI experiments: local datasets and downloaded dependencies
+# ============================================================
+
+# Local language-modeling datasets
+/data/
+
+# IWSLT14 downloaded and preprocessed data
+/examples/translation/orig/
+/examples/translation/iwslt14.tokenized.de-en/
+
+# Downloaded preprocessing dependencies
+/examples/translation/mosesdecoder/
+/examples/translation/subword-nmt/
+
+# Local backup files
+*.bak
+*.bak_*
+
+# EMOJI training checkpoints and outputs
+/checkpoints_of_seeds/

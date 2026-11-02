@@ -147,7 +147,7 @@ class PathManager:
 
     @staticmethod
     def rename(src: str, dst: str):
-        os.rename(src, dst)
+        os.replace(src, dst)
 
     """
     ioPath async PathManager methods:
